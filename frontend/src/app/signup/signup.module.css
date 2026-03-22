@@ -1,0 +1,98 @@
+.mainWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffaf0;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3%3G%3Cg fill='%23f0e6d6' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Playfair Display', serif;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 12px;
+  border: 3px double #9c2a2a;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+}
+
+.card::before, .card::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9c2a2a;
+}
+
+.card::before { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+.card::after { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+.title {
+  color: #1a1a1a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #9c2a2a;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  background: #fdfdfd;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #9c2a2a;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #9c2a2a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.msg {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error { color: #d32f2f; background: #fff5f5; }
+.success { color: #2e7d32; background: #f0f9f0; }

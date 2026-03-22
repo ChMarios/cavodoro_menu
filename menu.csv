@@ -1,0 +1,7 @@
+category,name_el,name_en,price,description_el,description_en,is_available
+ΣΑΛΑΤΕΣ | SALADS,Καβοντόρο,Cavodoro,8.50,"σπανάκι, ρόκα, γλυκό ξύδι, καρύδια, κουκουνάρι, ντοματίνια, παρμεζάνα","spinach, rocket, balsamic, walnuts, pine nuts, cherry tomatoes, parmesan",true
+ΣΑΛΑΤΕΣ | SALADS,Ντομάτα,Tomato,5.00,"ντομάτα, κρεμμύδι, πιπεριά","tomato, onion, peppers",true
+ΣΑΛΑΤΕΣ | SALADS,Χωριάτικη,Greek salad,8.50,"ντομάτα, αγγούρι, πιπεριά, ελιές, φέτα","tomato, cucumber, peppers, olives, feta",true
+ΣΑΛΑΤΕΣ | SALADS,Κρητική,Cretan,8.50,"ντάκος, ψιλοκομμένη ντομάτα, ελιές, κάππαρη, ξυνομυζήθρα","rusk, chopped tomatoes, olives, capers, mizithra cheese",true
+ΟΡΕΚΤΙΚΑ | APPETIZERS,Ντολμαδάκια γιαλαντζί,Dolmathes,7.00,παραδοσιακά ντολμαδάκια,traditional stuffed vine leaves,true
+ΚΑΦΕΔΕΣ | COFFEES,Φρέντο Εσπρέσσο,Freddo Espresso,3.50,διπλή δόση καφέ,double shot coffee,true
