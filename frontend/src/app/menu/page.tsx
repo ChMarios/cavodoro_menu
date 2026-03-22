@@ -2,6 +2,8 @@ import { supabase } from '@/lib/supabase';
 import styles from './menu.module.css';
 import { MENU_STRUCTURE, CATEGORY_ORDER } from '@/lib/constants';
 
+export const revalidate = 0;
+
 export default async function MenuPage() {
 
   const { data: dishes, error } = await supabase
