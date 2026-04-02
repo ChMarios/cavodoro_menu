@@ -1,4 +1,4 @@
-'use client'; // Απαραίτητο για τα Tabs
+'use client';
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
@@ -23,13 +23,11 @@ export default function MenuPage() {
     fetchMenu();
   }, []);
 
-  if (loading) return <div className={styles.container}>Φόρτωση μενού...</div>;
+  if (loading) return <div className={styles.container}>Φόρτωση...</div>;
 
-  // Φιλτράρουμε τα πιάτα με βάση την ενεργή κατηγορία
   const currentDishes = dishes.filter(d => d.category === activeCategory);
   const [greekTitle, englishTitle] = MENU_STRUCTURE[activeCategory].label.split(' | ');
 
-  // Βρίσκουμε τις υποκατηγορίες για την ενεργή κατηγορία
   const allPossibleSubs = MENU_STRUCTURE[activeCategory].subcategories.map(s => s.el);
   const usedSubs = allPossibleSubs.filter(subName => 
     currentDishes.some(d => d.subcategory === subName)
@@ -42,23 +40,26 @@ export default function MenuPage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.logo}>Cavo D'oro</h1>
-        <div className={styles.divider}></div>
         <p className={styles.tagline}>Καλή σας όρεξη !!! • Bon appétit !!!</p>
       </header>
 
-      <nav className={styles.tabsContainer}>
-        {CATEGORY_ORDER.map(catKey => (
-          <button
-            key={catKey}
-            className={`${styles.tabButton} ${activeCategory === catKey ? styles.activeTab : ''}`}
-            onClick={() => setActiveCategory(catKey)}
-          >
-            {MENU_STRUCTURE[catKey].label.split(' | ')[0]} 
-          </button>
-        ))}
-      </nav>
+      {/* --- MOBILE TABS NAVIGATION --- */}
+      <div className={styles.navWrapper}>
+        <nav className={styles.tabsContainer}>
+          {CATEGORY_ORDER.map(catKey => (
+            <button
+              key={catKey}
+              className={`${styles.tabButton} ${activeCategory === catKey ? styles.activeTab : ''}`}
+              onClick={() => setActiveCategory(catKey)}
+            >
+              {MENU_STRUCTURE[catKey].label.split(' | ')[0]}
+            </button>
+          ))}
+        </nav>
+      </div>
 
-      <section className={styles.categorySection}>
+      {/* --- CONTENT AREA --- */}
+      <main className={styles.mainContent}>
         <div className={styles.categoryTitle}>
           <span className={styles.titleGreek}>{greekTitle}</span>
           <span className={styles.currency}>€</span>
@@ -98,7 +99,7 @@ export default function MenuPage() {
             </div>
           );
         })}
-      </section>
+      </main>
     </div>
   );
 }
