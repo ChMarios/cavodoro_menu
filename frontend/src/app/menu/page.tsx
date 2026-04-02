@@ -23,11 +23,15 @@ export default function MenuPage() {
     fetchMenu();
   }, []);
 
-  if (loading) return <div className={styles.container}>Φόρτωση...</div>;
+  if (loading) return <div className={styles.loading}>Φόρτωση / Loading...</div>;
 
   const currentDishes = dishes.filter(d => d.category === activeCategory);
-  const [greekTitle, englishTitle] = MENU_STRUCTURE[activeCategory].label.split(' | ');
+  
+  // Διαχωρισμός τίτλου κατηγορίας
+  const categoryLabel = MENU_STRUCTURE[activeCategory].label;
+  const [greekTitle, englishTitle] = categoryLabel.split(' | ');
 
+  // Επεξεργασία υποκατηγοριών
   const allPossibleSubs = MENU_STRUCTURE[activeCategory].subcategories.map(s => s.el);
   const usedSubs = allPossibleSubs.filter(subName => 
     currentDishes.some(d => d.subcategory === subName)
@@ -40,25 +44,27 @@ export default function MenuPage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.logo}>Cavo D'oro</h1>
-        <p className={styles.tagline}>Καλή σας όρεξη !!! • Bon appétit !!!</p>
+        <p className={styles.tagline}>Καλή σας όρεξη • Bon appétit</p>
       </header>
 
-      {/* --- MOBILE TABS NAVIGATION --- */}
+      {/* --- ΔΙΓΛΩΣΣΑ TABS --- */}
       <div className={styles.navWrapper}>
         <nav className={styles.tabsContainer}>
-          {CATEGORY_ORDER.map(catKey => (
-            <button
-              key={catKey}
-              className={`${styles.tabButton} ${activeCategory === catKey ? styles.activeTab : ''}`}
-              onClick={() => setActiveCategory(catKey)}
-            >
-              {MENU_STRUCTURE[catKey].label.split(' | ')[0]}
-            </button>
-          ))}
+          {CATEGORY_ORDER.map(catKey => {
+            const label = MENU_STRUCTURE[catKey].label.replace('|', '•');
+            return (
+              <button
+                key={catKey}
+                className={`${styles.tabButton} ${activeCategory === catKey ? styles.activeTab : ''}`}
+                onClick={() => setActiveCategory(catKey)}
+              >
+                {label}
+              </button>
+            );
+          })}
         </nav>
       </div>
 
-      {/* --- CONTENT AREA --- */}
       <main className={styles.mainContent}>
         <div className={styles.categoryTitle}>
           <span className={styles.titleGreek}>{greekTitle}</span>
@@ -84,14 +90,16 @@ export default function MenuPage() {
               <div className={styles.menuList}>
                 {subDishes.map(dish => (
                   <div key={dish.id} className={styles.dishItem}>
-                    <div className={styles.greekCol}>
-                      <span className={styles.dishName}>{dish.name_el}</span>
+                    <div className={styles.contentCol}>
+                      <div className={styles.dishName}>{dish.name_el}</div>
                       {dish.description_el && <p className={styles.dishDesc}>{dish.description_el}</p>}
-                    </div>
-                    <div className={styles.priceCol}>{Number(dish.price).toFixed(2)}</div>
-                    <div className={styles.englishCol}>
-                      <span className={styles.dishName}>{dish.name_en}</span>
+                      
+                      <div className={styles.dishNameEn}>{dish.name_en}</div>
                       {dish.description_en && <p className={styles.dishDesc}>{dish.description_en}</p>}
+                    </div>
+
+                    <div className={styles.priceCol}>
+                      {Number(dish.price).toFixed(2)}
                     </div>
                   </div>
                 ))}
