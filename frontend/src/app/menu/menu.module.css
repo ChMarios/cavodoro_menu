@@ -1,28 +1,30 @@
+/* src/app/menu/menu.module.css */
+
 .container {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #fffdfa;
   min-height: 100vh;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
-/* HEADER ΣΑΝ ΤΗ ΦΩΤΟΓΡΑΦΙΑ */
+/* --- HEADER --- */
 .header {
   text-align: center;
-  padding: 40px 15px 10px 15px;
+  padding: 40px 25px 15px 25px; /* Περισσότερο padding γύρω από το λογότυπο */
 }
 
 .logo {
-  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
   font-weight: 700;
   color: #2d5a27;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .logoUnderline {
   height: 2px;
-  width: 120px;
+  width: 100px;
   background-color: #2d5a27;
   margin: 0 auto 15px auto;
 }
@@ -30,11 +32,11 @@
 .tagline {
   color: #2d5a27;
   font-style: italic;
-  font-size: clamp(0.85rem, 3vw, 1.1rem);
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
-/* STICKY TABS ΓΙΑ ΚΙΝΗΤΟ */
+/* --- STICKY TABS --- */
 .navWrapper {
   position: sticky;
   top: 0;
@@ -48,7 +50,7 @@
   display: flex;
   overflow-x: auto;
   gap: 10px;
-  padding: 0 15px;
+  padding: 0 20px; /* Απόσταση των tabs από τις άκρες */
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
@@ -56,106 +58,150 @@
 .tabsContainer::-webkit-scrollbar { display: none; }
 
 .tabButton {
-  padding: 8px 18px;
+  padding: 8px 16px;
   border: 1.5px solid #2d5a27;
   background: white;
   color: #2d5a27;
   border-radius: 20px;
   white-space: nowrap;
   font-weight: 700;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
+  transition: 0.2s;
 }
 
-.activeTab { background-color: #2d5a27; color: white; }
+.activeTab {
+  background-color: #2d5a27;
+  color: white;
+}
 
-/* ΤΙΤΛΟΣ ΚΑΤΗΓΟΡΙΑΣ */
+/* --- ΚΥΡΙΩΣ ΠΕΡΙΕΧΟΜΕΝΟ --- */
+.mainContent {
+  padding: 0 25px; /* ΑΥΤΟ ΔΙΟΡΘΩΝΕΙ ΤΑ ΠΛΑΓΙΑ: Δίνει 25px κενό αριστερά και δεξιά */
+  max-width: 900px;
+  margin: 0 auto; /* Κεντράρισμα για μεγάλες οθόνες */
+  box-sizing: border-box;
+}
+
 .categoryTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 40px 0;
   font-weight: 800;
-  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #2d5a27;
 }
 
 .currency {
-  margin: 0 25px;
+  margin: 0 15px;
   color: #1a1a1a;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
-/* Η ΤΡΙΣΤΗΛΗ ΔΙΑΤΑΞΗ (GRID) */
+/* --- Η ΔΙΑΤΑΞΗ ΤΩΝ ΠΙΑΤΩΝ --- */
 .dishItem {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 65px 1fr; /* Σταθερή τιμή στο κέντρο */
   align-items: flex-start;
-  gap: 15px;
+  gap: 12px;
   padding: 20px 0;
   border-bottom: 1px solid #f0e6d6;
+  width: 100%;
 }
 
-.greekCol { text-align: left; }
-.englishCol { text-align: right; }
+.greekCol {
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-right: 5px; /* Μικρό κενό πριν την τιμή */
+}
+
+.englishCol {
+  text-align: right;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-left: 5px; /* Μικρό κενό μετά την τιμή */
+}
 
 .priceCol {
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
-  min-width: 60px;
   text-align: center;
+  white-space: nowrap;
   padding-top: 2px;
 }
 
 .dishName {
-  font-weight: 600;
-  font-size: 1.15rem;
+  font-weight: 700;
+  font-size: 1rem;
   color: #2d5a27;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .dishDesc {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #666;
   font-style: italic;
-  margin-top: 6px;
+  margin-top: 5px;
   line-height: 1.4;
 }
 
-/* ΥΠΟΚΑΤΗΓΟΡΙΕΣ */
+/* --- ΥΠΟΚΑΤΗΓΟΡΙΕΣ --- */
 .subcategoryHeaderRow {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #2d5a27;
-  margin: 40px 0 10px 0;
-  padding-bottom: 5px;
+  margin: 30px 0 12px 0;
+  padding-bottom: 6px;
 }
 
 .subGreek, .subEnglish {
   font-weight: 800;
   color: #2d5a27;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
 }
 
 /* --- MOBILE OPTIMIZATION --- */
-@media (max-width: 768px) {
-  .header { padding: 25px 10px; }
-  .mainContent { padding: 0 12px; }
-  
-  /* Μειώνουμε τις γραμματοσειρές δραστικά για να χωρέσουν οι 3 στήλες */
-  .dishName { font-size: 0.88rem; }
-  .dishDesc { font-size: 0.72rem; margin-top: 4px; }
-  .priceCol { font-size: 1rem; min-width: 50px; }
-  
-  .dishItem { gap: 8px; padding: 15px 0; }
-  .categoryTitle { margin: 30px 0; font-size: 1rem; }
-  .currency { margin: 0 12px; font-size: 1.2rem; }
-  
-  .subGreek, .subEnglish { font-size: 0.85rem; }
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 0 18px; /* Λίγο λιγότερο κενό στα πολύ μικρά κινητά για να μη στριμώχνονται */
+  }
+
+  .dishItem {
+    grid-template-columns: 1fr 55px 1fr;
+    gap: 8px;
+  }
+
+  .dishName {
+    font-size: 0.88rem;
+  }
+
+  .dishDesc {
+    font-size: 0.75rem;
+  }
+
+  .priceCol {
+    font-size: 0.9rem;
+  }
 }
 
-.loading { text-align: center; padding: 100px; color: #2d5a27; font-weight: 600; }
+.loading {
+  text-align: center;
+  padding: 100px;
+  color: #2d5a27;
+  font-weight: 600;
+}
+
+.mainContent {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

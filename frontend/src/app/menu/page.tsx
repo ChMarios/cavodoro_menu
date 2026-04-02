@@ -91,7 +91,7 @@ export default function MenuPage() {
                     {/* ΕΛΛΗΝΙΚΑ */}
                     <div className={styles.greekCol}>
                       <div className={styles.dishName}>{dish.name_el}</div>
-                      {dish.description_el && <p className={styles.dishDesc}>({dish.description_el})</p>}
+                      {dish.description_el && <p className={styles.dishDesc}>{dish.description_el}</p>}
                     </div>
 
                     {/* ΤΙΜΗ */}
@@ -102,7 +102,7 @@ export default function MenuPage() {
                     {/* ΑΓΓΛΙΚΑ */}
                     <div className={styles.englishCol}>
                       <div className={styles.dishName}>{dish.name_en}</div>
-                      {dish.description_en && <p className={styles.dishDesc}>({dish.description_en})</p>}
+                      {dish.description_en && <p className={styles.dishDesc}>{dish.description_en}</p>}
                     </div>
                   </div>
                 ))}
