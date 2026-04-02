@@ -26,12 +26,9 @@ export default function MenuPage() {
   if (loading) return <div className={styles.loading}>Φόρτωση / Loading...</div>;
 
   const currentDishes = dishes.filter(d => d.category === activeCategory);
-  
-  // Διαχωρισμός τίτλου κατηγορίας
   const categoryLabel = MENU_STRUCTURE[activeCategory].label;
   const [greekTitle, englishTitle] = categoryLabel.split(' | ');
 
-  // Επεξεργασία υποκατηγοριών
   const allPossibleSubs = MENU_STRUCTURE[activeCategory].subcategories.map(s => s.el);
   const usedSubs = allPossibleSubs.filter(subName => 
     currentDishes.some(d => d.subcategory === subName)
@@ -44,7 +41,7 @@ export default function MenuPage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.logo}>Cavo D'oro</h1>
-        <p className={styles.tagline}>Καλή σας όρεξη • Bon appétit</p>
+        <p className={styles.tagline}>Καλή σας όρεξη !!! • Bon appétit !!!</p>
       </header>
 
       {/* --- ΔΙΓΛΩΣΣΑ TABS --- */}
@@ -90,16 +87,21 @@ export default function MenuPage() {
               <div className={styles.menuList}>
                 {subDishes.map(dish => (
                   <div key={dish.id} className={styles.dishItem}>
-                    <div className={styles.contentCol}>
+                    {/* Ελληνική πλευρά */}
+                    <div className={styles.greekCol}>
                       <div className={styles.dishName}>{dish.name_el}</div>
-                      {dish.description_el && <p className={styles.dishDesc}>{dish.description_el}</p>}
-                      
-                      <div className={styles.dishNameEn}>{dish.name_en}</div>
-                      {dish.description_en && <p className={styles.dishDesc}>{dish.description_en}</p>}
+                      {dish.description_el && <p className={styles.dishDesc}>({dish.description_el})</p>}
                     </div>
 
+                    {/* Τιμή στη μέση */}
                     <div className={styles.priceCol}>
                       {Number(dish.price).toFixed(2)}
+                    </div>
+
+                    {/* Αγγλική πλευρά */}
+                    <div className={styles.englishCol}>
+                      <div className={styles.dishName}>{dish.name_en}</div>
+                      {dish.description_en && <p className={styles.dishDesc}>({dish.description_en})</p>}
                     </div>
                   </div>
                 ))}
