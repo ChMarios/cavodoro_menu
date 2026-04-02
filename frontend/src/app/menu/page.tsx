@@ -41,10 +41,11 @@ export default function MenuPage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.logo}>Cavo D'oro</h1>
+        <div className={styles.logoUnderline}></div>
         <p className={styles.tagline}>Καλή σας όρεξη !!! • Bon appétit !!!</p>
       </header>
 
-      {/* --- ΔΙΓΛΩΣΣΑ TABS --- */}
+      {/* --- MOBILE TABS --- */}
       <div className={styles.navWrapper}>
         <nav className={styles.tabsContainer}>
           {CATEGORY_ORDER.map(catKey => {
@@ -87,18 +88,18 @@ export default function MenuPage() {
               <div className={styles.menuList}>
                 {subDishes.map(dish => (
                   <div key={dish.id} className={styles.dishItem}>
-                    {/* 1. Ελληνικά (Αριστερά) */}
+                    {/* ΕΛΛΗΝΙΚΑ */}
                     <div className={styles.greekCol}>
                       <div className={styles.dishName}>{dish.name_el}</div>
                       {dish.description_el && <p className={styles.dishDesc}>({dish.description_el})</p>}
                     </div>
 
-                    {/* 2. Τιμή (Κέντρο) */}
+                    {/* ΤΙΜΗ */}
                     <div className={styles.priceCol}>
                       {Number(dish.price).toFixed(2)}
                     </div>
 
-                    {/* 3. Αγγλικά (Δεξιά) */}
+                    {/* ΑΓΓΛΙΚΑ */}
                     <div className={styles.englishCol}>
                       <div className={styles.dishName}>{dish.name_en}</div>
                       {dish.description_en && <p className={styles.dishDesc}>({dish.description_en})</p>}
