@@ -87,18 +87,18 @@ export default function MenuPage() {
               <div className={styles.menuList}>
                 {subDishes.map(dish => (
                   <div key={dish.id} className={styles.dishItem}>
-                    {/* Ελληνική πλευρά */}
+                    {/* 1. Ελληνικά (Αριστερά) */}
                     <div className={styles.greekCol}>
                       <div className={styles.dishName}>{dish.name_el}</div>
                       {dish.description_el && <p className={styles.dishDesc}>({dish.description_el})</p>}
                     </div>
 
-                    {/* Τιμή στη μέση */}
+                    {/* 2. Τιμή (Κέντρο) */}
                     <div className={styles.priceCol}>
                       {Number(dish.price).toFixed(2)}
                     </div>
 
-                    {/* Αγγλική πλευρά */}
+                    {/* 3. Αγγλικά (Δεξιά) */}
                     <div className={styles.englishCol}>
                       <div className={styles.dishName}>{dish.name_en}</div>
                       {dish.description_en && <p className={styles.dishDesc}>({dish.description_en})</p>}
