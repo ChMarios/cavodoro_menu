@@ -1,15 +1,13 @@
-/* src/app/menu/menu.module.css */
-
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #fffdfa; /* Κρεμώδες φόντο για αίσθηση καταλόγου */
+  background-color: #fffdfa; 
   min-height: 100vh;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* --- HEADER --- */
+
 .header { 
   text-align: center; 
   margin-bottom: 40px; 
@@ -19,7 +17,7 @@
   font-size: clamp(2.2rem, 8vw, 3.5rem); 
   font-weight: 700; 
   margin-bottom: 5px; 
-  color: #2d5a27; /* Σκούρο πράσινο */
+  color: #2d5a27; 
 }
 
 .divider { 
@@ -36,7 +34,7 @@
   text-align: center;
 }
 
-/* --- ΚΑΤΗΓΟΡΙΑ (π.χ. ΑΡΤΟΣ € BREAD) --- */
+
 .categoryTitle {
   display: flex;
   justify-content: center;
@@ -59,7 +57,7 @@
 
 .titleEnglish { color: #555; }
 
-/* --- ΥΠΟΚΑΤΗΓΟΡΙΑ (π.χ. ΚΡΥΑ | COLD) --- */
+
 .subcategoryHeaderRow {
   display: flex;
   justify-content: space-between;
@@ -78,7 +76,7 @@
 
 .subEnglish { text-align: right; }
 
-/* --- ΛΙΣΤΑ ΠΙΑΤΩΝ --- */
+
 .menuList {
   display: flex;
   flex-direction: column;
@@ -87,7 +85,7 @@
 .dishItem {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Ευθυγράμμιση στην κορυφή αν το κείμενο μεγαλώσει */
+  align-items: flex-start; 
   padding: 12px 0;
   border-bottom: 1px solid #f0e6d6;
   gap: 10px;
@@ -97,13 +95,13 @@
   border-bottom: none;
 }
 
-/* Τα Ελληνικά αριστερά */
+
 .greekCol { 
   flex: 1.2;
   text-align: left; 
 }
 
-/* Η Τιμή ΠΑΝΤΑ στη μέση */
+
 .priceCol {
   flex: 0 0 auto;
   min-width: 55px;
@@ -111,12 +109,12 @@
   font-weight: 800;
   font-size: 1.1rem;
   color: #1a1a1a;
-  background-color: #fdf8f0; /* Απαλό φόντο για να ξεχωρίζει η τιμή */
+  background-color: #fdf8f0; 
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Τα Αγγλικά δεξιά */
+
 .englishCol { 
   flex: 1.2;
   text-align: right; 
@@ -147,16 +145,16 @@
     font-size: 2.4rem; 
   }
 
-  /* Απαγορεύουμε στα στοιχεία να πέσουν το ένα κάτω από το άλλο */
+ 
   .dishItem {
     flex-direction: row !important;
-    align-items: center; /* Κεντράρισμα για ομοιόμορφη γραμμή */
+    align-items: center; 
     gap: 6px;
     padding: 10px 0;
   }
 
   .dishName {
-    font-size: 0.95rem; /* Μικραίνουμε ελάχιστα για να χωράει στην ίδια σειρά */
+    font-size: 0.95rem; 
   }
 
   .dishDesc {
