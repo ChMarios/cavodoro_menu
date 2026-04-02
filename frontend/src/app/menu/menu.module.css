@@ -4,67 +4,69 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #fffdfa; /* Κρεμώδες φόντο για "ζεστή" αίσθηση */
+  background-color: #fffdfa; /* Κρεμώδες φόντο για αίσθηση καταλόγου */
   min-height: 100vh;
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* HEADER */
+/* --- HEADER --- */
 .header { 
   text-align: center; 
-  margin-bottom: 50px; 
+  margin-bottom: 40px; 
 }
 
 .logo { 
-  font-size: clamp(2.5rem, 8vw, 3.8rem); 
+  font-size: clamp(2.2rem, 8vw, 3.5rem); 
   font-weight: 700; 
-  margin-bottom: 10px; 
-  color: #2d5a27; /* Σκούρο πράσινο Cavo D'oro */
+  margin-bottom: 5px; 
+  color: #2d5a27; /* Σκούρο πράσινο */
 }
 
 .divider { 
-  width: 80px; 
+  width: 60px; 
   height: 2px; 
   background-color: #2d5a27; 
-  margin: 10px auto; 
+  margin: 8px auto; 
 }
 
 .tagline { 
   color: #2d5a27; 
   font-style: italic; 
-  font-size: 1.1rem; 
+  font-size: 1rem; 
   text-align: center;
 }
 
-/* ΤΙΤΛΟΣ ΚΑΤΗΓΟΡΙΑΣ (π.χ. ΑΡΤΟΣ € BREAD) */
+/* --- ΚΑΤΗΓΟΡΙΑ (π.χ. ΑΡΤΟΣ € BREAD) --- */
 .categoryTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 0 30px 0;
+  margin: 50px 0 25px 0;
   font-weight: 800;
-  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .titleGreek { color: #2d5a27; }
+
 .currency { 
-  margin: 0 20px; 
+  margin: 0 15px; 
   color: #1a1a1a; 
-  font-size: 1.4rem; 
+  font-size: 1.3rem; 
   font-weight: 400;
 }
+
 .titleEnglish { color: #555; }
 
-/* ΥΠΟΚΑΤΗΓΟΡΙΑ (π.χ. ΚΡΥΑ | COLD) */
+/* --- ΥΠΟΚΑΤΗΓΟΡΙΑ (π.χ. ΚΡΥΑ | COLD) --- */
 .subcategoryHeaderRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0 15px 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #2d5a27;
+  margin: 30px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #2d5a27;
 }
 
 .subGreek, .subEnglish {
@@ -74,86 +76,114 @@
   text-transform: uppercase;
 }
 
-/* ΛΙΣΤΑ ΠΙΑΤΩΝ - ΕΔΩ ΕΙΝΑΙ Η ΔΙΟΡΘΩΣΗ ΓΙΑ ΤΟ MOBILE */
+.subEnglish { text-align: right; }
+
+/* --- ΛΙΣΤΑ ΠΙΑΤΩΝ --- */
+.menuList {
+  display: flex;
+  flex-direction: column;
+}
+
 .dishItem {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 15px 0;
+  align-items: flex-start; /* Ευθυγράμμιση στην κορυφή αν το κείμενο μεγαλώσει */
+  padding: 12px 0;
   border-bottom: 1px solid #f0e6d6;
   gap: 10px;
 }
 
-.greekCol {
-  flex: 1;
-  text-align: left;
+.dishItem:last-child {
+  border-bottom: none;
 }
 
+/* Τα Ελληνικά αριστερά */
+.greekCol { 
+  flex: 1.2;
+  text-align: left; 
+}
+
+/* Η Τιμή ΠΑΝΤΑ στη μέση */
 .priceCol {
-  min-width: 65px; /* Σταθερό πλάτος για να είναι ευθυγραμμισμένες οι τιμές */
+  flex: 0 0 auto;
+  min-width: 55px;
   text-align: center;
   font-weight: 800;
   font-size: 1.1rem;
   color: #1a1a1a;
-  padding-top: 2px;
+  background-color: #fdf8f0; /* Απαλό φόντο για να ξεχωρίζει η τιμή */
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
-.englishCol {
-  flex: 1;
-  text-align: right;
+/* Τα Αγγλικά δεξιά */
+.englishCol { 
+  flex: 1.2;
+  text-align: right; 
 }
 
 .dishName { 
   font-weight: 600; 
   font-size: 1.05rem; 
   color: #2d5a27;
-  line-height: 1.2;
+  display: block;
 }
 
 .dishDesc { 
   font-size: 0.85rem; 
   color: #666; 
   font-style: italic; 
-  margin-top: 4px;
+  margin-top: 4px; 
+  line-height: 1.3;
 }
 
-/* --- MOBILE RESPONSIVE (ΚΙΝΗΤΑ) --- */
+/* --- MOBILE RESPONSIVE (Κινητά σε κάθετη διάταξη) --- */
 @media (max-width: 600px) {
   .container {
-    padding: 20px 12px;
+    padding: 20px 10px;
   }
 
-  /* Αποτρέπουμε το "ένα κάτω από το άλλο" */
+  .logo { 
+    font-size: 2.4rem; 
+  }
+
+  /* Απαγορεύουμε στα στοιχεία να πέσουν το ένα κάτω από το άλλο */
   .dishItem {
-    flex-direction: row !important; /* Αναγκάζουμε την οριζόντια διάταξη */
-    align-items: center; 
-    gap: 8px;
-    padding: 12px 0;
+    flex-direction: row !important;
+    align-items: center; /* Κεντράρισμα για ομοιόμορφη γραμμή */
+    gap: 6px;
+    padding: 10px 0;
   }
 
   .dishName {
-    font-size: 0.92rem; /* Μικραίνουμε λίγο για να χωράνε στην ίδια σειρά */
+    font-size: 0.95rem; /* Μικραίνουμε ελάχιστα για να χωράει στην ίδια σειρά */
+  }
+
+  .dishDesc {
+    font-size: 0.8rem;
   }
 
   .priceCol {
     font-size: 1rem;
-    min-width: 50px;
+    min-width: 48px;
+    padding: 1px 3px;
   }
 
-  .greekCol, .englishCol {
-    flex: 1;
-  }
-
-  .categoryTitle {
-    margin: 40px 0 20px 0;
-  }
-
-  .currency {
-    margin: 0 10px;
-    font-size: 1.2rem;
+  .categoryTitle { 
+    margin: 35px 0 15px 0;
+    font-size: 1.1rem;
   }
   
+  .currency { 
+    margin: 0 8px;
+    font-size: 1.1rem;
+  }
+
   .subcategoryHeaderRow {
     margin: 25px 0 10px 0;
+  }
+
+  .subGreek, .subEnglish {
+    font-size: 0.9rem;
   }
 }
