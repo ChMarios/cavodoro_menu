@@ -28,18 +28,15 @@ export default async function MenuPage() {
 
         const [greekTitle, englishTitle] = MENU_STRUCTURE[catKey].label.split(' | ');
 
-        // --- ΕΔΩ ΕΙΝΑΙ Η ΑΛΛΑΓΗ ΓΙΑ ΤΗ ΣΩΣΤΗ ΣΕΙΡΑ ---
-        // Αντί για τυχαία σειρά, παίρνουμε τις υποκατηγορίες όπως τις γράψαμε στο constants.ts
         const allPossibleSubs = MENU_STRUCTURE[catKey].subcategories.map(s => s.el);
         const usedSubs = allPossibleSubs.filter(subName => 
           catDishes.some(d => d.subcategory === subName)
         );
 
-        // Αν υπάρχουν πιάτα χωρίς υποκατηγορία, τα βάζουμε στο τέλος
         if (catDishes.some(d => !d.subcategory || d.subcategory === "")) {
           usedSubs.push(null as any);
         }
-        // --------------------------------------------
+
 
         return (
           <section key={catKey} className={styles.categorySection}>
