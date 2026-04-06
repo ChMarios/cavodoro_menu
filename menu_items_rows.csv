@@ -1,0 +1,167 @@
+name_el,name_en,description_el,description_en,price,category,is_available,subcategory
+Ψωμί / φέτα,Bread / slice,,,0.50,BREAD,true,
+Τζατζίκι χειροποίητο,Tzatziki (homemade),,,4.00,APPETIZERS,true,ΚΡΥΑ
+Τυροκαυτερή χειροποίητη,Spicy cheese spread (homemade),,,4.00,APPETIZERS,true,ΚΡΥΑ
+Σκορδαλιά χειροποίητη,Potato garlic spread (homemade),,,4.00,APPETIZERS,true,ΚΡΥΑ
+Μελιτζανοσαλάτα χειροποίητη,Eggplant spread (homemade),,,4.50,APPETIZERS,true,ΚΡΥΑ
+Φέτα Καρύστου,Karystos feta cheese,,,4.00,APPETIZERS,true,ΚΡΥΑ
+Ταραμοσαλάτα,Tarama spread,,,4.00,APPETIZERS,true,ΚΡΥΑ
+Πατατοσαλάτα,Potato salad,,,4.50,APPETIZERS,true,ΚΡΥΑ
+Φάβα παραδοσιακή,Traditional fava beans,,,5.50,APPETIZERS,true,ΖΕΣΤΑ
+Χαλούμι Κύπρου,Cyprus Hallumi cheese,με χειροποίητη μαρμελάδα ντομάτας,with homemade tomato marmelade,7.00,APPETIZERS,true,ΖΕΣΤΑ
+Σαγανάκι τυρί,Saganaki (fried cheese),,,6.00,APPETIZERS,true,ΖΕΣΤΑ
+Τυροπιτάρα παραδοσιακή,Traditional homemade cheese pie,χειροποίητη με κεφαλοτύρι Καρύστου,with local Karystos cheese,7.50,APPETIZERS,true,ΖΕΣΤΑ
+Πιπεριές Φλωρίνης γεμιστές,Stuffed Florina peppers,με ποικιλία 4 τυριών ανά τεμάχιο,4 cheese per piece,3.00,APPETIZERS,true,ΖΕΣΤΑ
+Φρέσκα μανιτάρια Πλευρώτους,Fresh oyster mushrooms,ψητά στη σχάρα με σως μουστάρδας,with mustard sauce grilled,7.50,APPETIZERS,true,ΖΕΣΤΑ
+Μανούρι σε φύλλο κρούστας,Fried manuri cheese in filo pastry,στο τηγάνι με ντόπιο μέλι και σουσάμι,with local honey and sesame,7.00,APPETIZERS,true,ΖΕΣΤΑ
+Κολοκυθάκια τηγανιτά,Fried courgettes,,,4.50,APPETIZERS,true,ΖΕΣΤΑ
+Μελιτζάνες τηγανιτές,Fried eggplants,,,4.50,APPETIZERS,true,ΖΕΣΤΑ
+Κολοκυθοκεφτέδες,Fried zucchini balls,με αυγό φέτα κρεμμύδι και μυρωδικά,with egg feta cheese onion and herbs,7.00,APPETIZERS,true,ΖΕΣΤΑ
+Χορτόπιτα,Spinach pie,4 τεμάχια,4 pieces,8.00,APPETIZERS,true,ΖΕΣΤΑ
+Μελιτζάνα φούρνου με τυριά και σουτζούκι,Eggplant with cheese and sujuk in the oven,,,9.00,APPETIZERS,true,ΖΕΣΤΑ
+Καβοντόρο,Cavodoro,σπανάκι ρόκα πράσινη λόλα παρμεζάνα καραμελωμένα καρύδια ρόδι χειροποίητη σως μελιού,spinach rocket green lola parmesan caramilized nuts pomegranate homemade honey sauce,8.50,SALADS,true,
+Ντομάτα,Tomato,ντομάτα κρεμμύδι αγγούρι πιπεριά,tomato onion cucumber peppers,5.00,SALADS,true,
+Χωριάτικη,Greek salad,ντομάτα κρεμμύδι αγγούρι πιπεριά ελιές φέτα Καρύστου,tomato onion cucumber peppers olives local feta cheese,8.50,SALADS,true,
+Κρητική,Cretan,ντάκος ψιλοκομμένη ντοματούλα ροδέλα ελιάς κατίκι Δομοκού κάπαρη,rusk dakos chopped tomatoes sliced olives Katiki cheese caper,8.50,SALADS,true,
+Σαλάτα Κινόα με κους κους,Kinoa salad with couscous,τζίντζερ λάιμ κολοκυθάκι ψητό φρέσκα κρεμμύδια χρωματιστές πιπεριές δυόσμος βασιλικός,ginger lime roasted zucchini spring onions colored peppers mint basil,8.50,SALADS,true,
+Πράσινη σαλάτα με σύκο και καραμελωμένο ξινόμηλο,Green salad with fig and caramelized sour apple,με χειροποίητο κρουτόν και ξινομυζήθρα,with homemade croutons and sour cheese,8.50,SALADS,true,
+Μαρούλι,Lettuce,,,5.00,SALADS,true,
+Λάχανο με καρότο,Cabbage with carrots,,,5.00,SALADS,true,
+Κουνουπίδι,Cauliflower,,,5.00,SALADS,true,
+Βλήτα / Ραδίκια,Vlita / mountain greens,,,4.50,SALADS,true,
+Κολοκύθια,Courgettes,,,4.50,SALADS,true,
+Παντζάρια,Beetroot,,,5.00,SALADS,true,
+Παντζάρια σκορδαλιά,Beetroot with homemade garlic spread,,,6.00,SALADS,true,
+Αμπελοφάσουλα,String beans,,,7.00,SALADS,true,
+Αμπελοφάσουλα σκορδαλιά,String beans with homemade garlic spread,,,8.00,SALADS,true,
+Ανάμεικτη,Mixed,με βραστά λαχανικά,with boiled vegetables,8.00,SALADS,true,
+Μαυρομάτικα,Black eyed beans,,,5.50,SALADS,true,
+Ντολμαδάκια γιαλαντζί,Dolmathes,,,7.00,SALADS,true,
+Παντζαροσαλάτα με γιαούρτι ξινόμηλο μαγιονέζα καρύδι και λάδι βασιλικού,Beetroot salad with yoghurt sour apple nuts and basil oil,,,8.00,SALADS,true,
+Πατσάς,Tripe,,,5.50,SOUPS,true,
+Ψαρόσουπα με κοκκινόψαρο,Red fish soup,,,10.00,SOUPS,true,
+Φασολάκια φρέσκα,Fresh green beans,,,7.00,VEGETERIANS,true,
+Μπάμιες,Ladies fingers (okra),,,6.50,VEGETERIANS,true,
+Αρακάς,Peas,,,6.00,VEGETERIANS,true,
+Ρεβύθια στο φούρνο με κάρυ,Chickpeas with curry,,,6.50,VEGETERIANS,true,
+Γίγαντες,Giant beans,,,8.00,VEGETERIANS,true,
+Ιμάμ μπαΐλντι,Imam (eggplant with onions),,,7.00,VEGETERIANS,true,
+Μπριάμ,Courgettes with potatoes & eggplants,,,7.00,VEGETERIANS,true,
+Γεμιστά,Stuffed tomatoes & peppers,ντομάτα πιπεριά,tomato and peppers,8.00,VEGETERIANS,true,
+Αγγινάρες αλά πολίτα,Artichokes in lemon,,,6.50,VEGETERIANS,true,
+Πατάτες φρέσκιες,Handcut fries,καθαρισμένες στο χέρι,,3.80,FRIED,true,
+Πατάτες φρέσκιες με τυρί,Handcut fries with cheese,,,4.30,FRIED,true,
+Κεφτεδάκια,Meatballs,από ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,from locally sourced minced beef,8.50,FRIED,true,
+Καλαμάρια,Kalamares (squids),,,11.00,FRIED,true,
+Μπακαλιάρος σκορδαλιά,Cod with homemade garlic spread,,,13.00,FRIED,true,
+Γαύρος φρέσκος,Fresh anchovy,,,8.00,FRIED,true,
+Σαρδέλες φρέσκιες,Fresh sardines,,,8.00,FRIED,true,
+Μακαρόνια με σάλτσα,Spaghetti with tomato or lemon sauce,,,5.50,PASTA,true,
+Μακαρόνια με κιμά,Spaghetti bolognese,με ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,with locally sourced minced beef,8.50,PASTA,true,
+Ρύζι,Rice with turmeric,με κουρκουμά,,5.00,PASTA,true,
+Κουρκουμπίνες,Kourkoumbines,τοπικά παραδοσιακά ζυμαρικά με σάλτσα και τυράκι,homemade traditional pasta with tomato sauce and cheese,8.00,PASTA,true,
+Παστίτσιο,Pastichio,με ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής και χειροποίητη μπεσαμέλ,with locally sourced minced beef and homemade beshamel,8.50,PASTA,true,
+Πένες ογκρατέν με κοτόπουλο,Penne au gratin with chicken,,,8.00,PASTA,true,
+Λαζάνια Λαχανικών,Lasagne with vegetables,,,7.50,PASTA,true,
+Σολομός με φιογκάκια και μπρόκολο,Salmon with pasta and brocolli,,,11.00,PASTA,true,
+Ριζότο γαρίδας,Shrimp risotto,,,12.50,PASTA,true,
+Ριζότο μανιταριών,Mushroom risotto,,,11.00,PASTA,true,
+Κατσικάκι,Local kid,ντόπιας παραγωγής,locally sourced,13.00,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΚΟΚΚΙΝΙΣΤΑ
+Κατσικάκι γιουβέτσι με κριθαράκι,Local kid with orzo,,,13.00,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΚΟΚΚΙΝΙΣΤΑ
+Τασκεμπάπ,Beef stew,από μοσχάρι ντόπιας παραγωγής,from locally sourced beef,11.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΚΟΚΚΙΝΙΣΤΑ
+Κεφτεδάκια / σουτζουκάκια,Meatballs,από ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,from locally sourced minced beef,8.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΚΟΚΚΙΝΙΣΤΑ
+Κατσίκι γιουβέτσι,Local kid with pasta,,,13.00,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΚΟΚΚΙΝΙΣΤΑ
+Κατσικάκι,Local kid,ντόπιας παραγωγής,locally sourced,12.00,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Κατσικάκι φρικασέ,Local kid fricassee,με μαρούλι και φρέσκο κρεμμυδάκι,with lettuce and fresh onions,13.00,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Χοιρινό άπαχο σε φετούλες,Lean pork in slices,,,8.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Κοτόπουλο Ευβοίας,Chicken from our island,,,7.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Πρασοτηγανιά με άπαχο χοιρινό,Lean pork with leek,,,8.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Χοιρινό με σέλινο,Pork with celery,,,8.50,MAIN_COURSES,true,ΚΡΕΑΤΙΚΑ ΛΕΜΟΝΑΤΑ
+Μουσακάς,Mousaca,με χειροποίητη μπεσαμέλ και ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,eggplant courgettes potatoes locally sourced minced beef and homemade beshamel,8.50,MAIN_COURSES,true,ΚΙΜΑΔΕΣ
+Παπουτσάκια,Papoutsakia,με χειροποίητη μπεσαμέλ και ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,eggplant locally sourced minced beef and homemade beshamel,8.50,MAIN_COURSES,true,ΚΙΜΑΔΕΣ
+Κολοκυθάκια γεμιστά αυγολέμονο,Stuffed courgettes,με ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,with locally sourced minced beef and rice,8.50,MAIN_COURSES,true,ΚΙΜΑΔΕΣ
+Λαχανοντολμάδες,Cabbage leaves stuffed,με ολόφρεσκο μοσχαρίσιο κιμά ντόπιας παραγωγής,with locally sourced minced beef and rice,8.50,MAIN_COURSES,true,ΚΙΜΑΔΕΣ
+Χταπόδι στιφάδο,Octopus stew,,,15.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Χταπόδι με κοφτό μακαρονάκι,Octopus pasta,,,10.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Μπακαλιάρος πλακί με κρεμμύδια,Cod with onions,,,13.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Φρέσκο γαυράκι,Fresh ancovy,,,8.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Φρέσκια σαρδελίτσα,Fresh sardines,,,8.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Σουπιές με σπανάκι,Cuttlefish with spinach,,,11.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Κολιοί στο φούρνο,Mackerel in the oven,,,9.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Ρίκι αλά σπετσιώτα,Skip jack tuna,,,12.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Κριθαρότο με καλαμάρι σπανάκι και τοματίνια,Orzo with squid spinach and cherry tomatoes,,,11.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΜΕ ΣΑΛΤΣΑ ΝΤΟΜΑΤΑΣ
+Χταπόδι,Octopus,,,13.00,MAIN_COURSES,true,ΘΑΛΛΑΣΙΝΑ ΞΥΔΑΤΑ
+Κόκορας κοκκινιστός,Local rooster,με κουρκουμπίνες,with homemade Karystos pasta,12.00,TRADITIONAL_DISHES,true,
+Κουνέλι,Local Rabbit,λεμονάτο ή στιφάδο ντόπιας παραγωγής με πουρέ σελινόριζας με γλυκοπατάτα,stew or in lemon sauce with puree of celeriac and sweet potato,11.00,TRADITIONAL_DISHES,true,
+Ψαρονέφρι Κάβο Ντόρο,Cavo D'oro pork tenderloin grilled,γεμιστό με γραβιέρα και λιαστή ντομάτα μαριναρισμένο σε πέστο με λάδι βασιλικού στη σχάρα,stuffed with gruyere and sun-dried tomatoes marinated in pesto with basil oil grilled,14.50,SPECIAL_DISHES,true,
+Κοτόπουλο του κηπουρού,Gardener's chicken,φιλέτο στήθος με κρέμα γάλακτος κίτρινες και κόκκινες πιπεριές και φέτα Καρύστου,grilled chicken breast fillet with cream sauce red & yellow peppers and Karystos feta cheese,11.50,SPECIAL_DISHES,true,
+Χιουνκιάρ Μπεγεντί,Hunkiar Begendi,τρυφερό μοσχαράκι ντόπιας παραγωγής με πουρέ καπνιστής μελιτζάνας,tender locally sourced beef with puree of smoked eggplant,13.00,SPECIAL_DISHES,true,
+Ισλίμ της Όγιας,Oya's Islim,σουτζουκάκι από ολόφρεσκο ντόπιο μοσχαρίσιο και αρνίσιο κιμά δεμένο σε μελιτζάνα,meatball from locally sourced minced beef and lamb wrapped in eggplant,8.00,SPECIAL_DISHES,true,
+Γιαουρτλού κεμπάπ,Oriental kebab,πολίτικο κεμπάπ από ολόφρεσκο ντόπιο μοσχαρίσιο και αρνίσιο κιμά με σως γιαουρτιού,from locally sourced minced beef and lamb with yoghurt sauce,11.00,SPECIAL_DISHES,true,
+Σαρδέλες φιλεταρισμένες,Fresh sardines fillet grilled,με ντομάτα κρεμμύδι μαϊντανό και σως λεμονιού στη σχάρα,with tomato onions parsley and lemon sauce,12.00,SPECIAL_DISHES,true,
+Τηγανιά Κοτοπούλου,Pan-fried Chicken,μπουκίτσες κοτόπουλου σε κρέμα γάλακτος και μανιτάρια,chicken bites with cream sauce & mushrooms,11.00,SPECIAL_DISHES,true,
+Ισλίμ κεμπάπ,Islim kebab,"(σουτζουκάκι από ολόφρεσκο ντόπιο μοσχαρίσιο και αρνίσιο κιμά, δεμένο με μελιτζάνα)",(meatball from locally sourced minced beef and lamb wrapped in eggplant),8,SPECIAL_DISHES,true,
+Τηγανιά Κοτόπουλου,Pan - fried Chicken,(μπουκίτσες κοτόπουλο σε κρέμα γάλακτος & μανιτάρια),(chicken bites with cream sauce & mushrooms),11,SPECIAL_DISHES,true,
+Σφυρίδα,White grouper,,,65,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Φιλέτο Τόνου,Tuna Fillet,,,50,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Σολωμός,Salmon,,,50,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Ξιφίας,Sword fish,,,50,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Σαργός Α',Dorado A',,,65,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Φαγκρί,Red snapper,,,65,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕ ΤΟ ΚΙΛΟ
+Χταπόδι με φάβα και πούδρα από καραμελωμένο φουντούκι,Octopus with fava and caramelized hazelnut pouder,,,16.5,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕΡΙΔΑ
+Κολιός,Mackerel,,,9.5,GRILLED,true,ΘΑΛΑΣΣΙΝΑ ΜΕΡΙΔΑ
+Κοτόπουλο Ευβοίας,Local chicken,,,7.5,GRILLED,true,ΣΟΥΒΛΑΣ
+Κοντοσούβλι από χοιρινό Ευβοίας,Local pork,,,9.5,GRILLED,true,ΣΟΥΒΛΑΣ
+Ποικιλία κρεατικών 2 ατόμων,Mixed grilled for 2 people,"(μπιφτέκι μοσχαρίσιο, κοτόπουλο, χοιρινό, παϊδάκια αρνίσια, λουκάνικο)","(beef burger, chicken, pork, lamb chops, local sausage)",20,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Ποικιλία κρεατικών 4 ατόμων,Mixed grilled for 4 people,"(μπιφτέκι μοσχαρίσιο, κοτόπουλο, χοιρινό, παϊδάκια αρνίσια, λουκάνικο)","(beef burger, chicken, pork, lamb chops, local sausage)",35,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Παϊδάκια αρνίσια,Local lamb chops per kilo,"(ντόπιας παραγωγής, το κιλό)",,35,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Πανσέτα χοιρινή Ευβοίας,Local belly pork,,,8.5,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Μπιφτέκι γεμιστό με κασέρι,Burger filled with cheese,(από ολόφρεσκο κιμά ντόπιας παραγωγής),(from locally sourced minced beef),11,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Λουκάνικο ντόπιο,Local Sausage,,,7,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Φιλέτο μοσχαρίσιο ντόπιο,Local beef tenderloin,,,20,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Μπιφτέκι,Burger,(από ολόφρεσκο κιμά ντόπιας παραγωγής),(from locally sourced minced beef),10,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Σουβλάκι από ντόπιο μοσχάρι,Souvlaki (from locally sourced beef),,,14,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Σπαλομπριζόλα χοιρινή Ευβοίας,Local pork chops,,,10,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Συκώτι ταλιάτα από ντόπιο μοσχάρι,Local beef liver tagliata,(με σως μουστάρδας),(with mustard sauce),10,GRILLED,true,ΚΡΕΑΤΙΚΑ
+Κοτόπουλο φιλέτο στήθος Ευβοίας,Local chicken breast fillet,,,9,GRILLED,true,ΚΡΕΑΤΙΚΑ
+"Αναψυκτικά σε μπουκάλι 250ml (Coca Cola, Sprite, πορτοκαλάδα, λεμονάδα))","Bottle 250ml (Coca Cola, Sprite, Orange, Lemonade)",,,2.5,SOFT_DRINKS,true,
+"Μιτσικέλι νερό ανθρακούχο 1,5lit","Natural gas mineral water 1,5lit",,,2.5,SOFT_DRINKS,true,
+Σουρωτή 250ml,Natural gas mineral water 250ml,,,2,SOFT_DRINKS,true,
+"Νερό εμφιαλωμένο 0,5lit","Bottle water 0,5lit",,,0.7,SOFT_DRINKS,true,
+"Νερό εμφιαλωμένο 1,5lit","Bottle water 1,5lit",,,1.5,SOFT_DRINKS,true,
+Σόδα μπουκάλι 250ml,Soda water 250ml,,,2,SOFT_DRINKS,true,
+"Αναψυκτικά σε κουτί 330ml (Coca Cola, Zero, Light)","Can 330ml (Coca Cola, Zero, Light)",,,2.5,SOFT_DRINKS,true,
+"Φίξ, Μάμος 0,5lit","Fix, Mamos 0,5lit",,,3.5,BEERS,true,
+"Άμστελ, Άλφα, Έζα lager","Amstel, Alfa, Eza lager",,,3.5,BEERS,true,
+Άλφα κουτί 330ml,Alfa can 330ml,,,2.6,BEERS,true,
+"Έζα, Άλφα (χωρίς αλκοόλ) 0,5lit","Eza, Alfa (no alcohol) 0,5lit",,,3.5,BEERS,true,
+Μάμος κουτί 330ml,Mamos can 330ml,,,2.8,BEERS,true,
+"Ποτήρι 0,3lit","Draught 0,3lit",,,3.5,BEERS,true,
+"Ποτήρι 0,5lit","Draught 0,5lit",,,5,BEERS,true,
+"Έζα Pilsener, Κάιζερ, Φίσερ 0,5lit","Eza Pilsener, Kaiser, Fisher 0,5lit",,,4,BEERS,true,
+"Ούζο, τσίπουρο κραφάκι 200ml","Ouzo, tsipouro 200ml",,,10,ALCHOHOLIC,true,
+"Μαρτίνι, Μπακάρντι","Martini, Bacardi",,,7,ALCHOHOLIC,true,
+"Ούζο, τσίπουρο μερίδα","Ouzo, tsipouro portion",,,2.5,ALCHOHOLIC,true,
+Μεταξά,Metaxa,,,6,ALCHOHOLIC,true,
+"Τζιν, Ουϊσκι, Βότκα","Gin, Whiskey, Vodka",,,7,ALCHOHOLIC,true,
+"Τριανταφύλλης ξηρός (σαββατιανό) 0,5 lit","Triantafillis local savatiano dry 0,5 lit",,,5,WINES,true,ΛΕΥΚΑ
+Μοσχάτο Λήμνου 1 lit,Limnos Muscat 1 lit,,,7,WINES,true,ΡΟΖΕ
+"Καρύστου χύμα (μερλό, καμπερνέ) 1 lit","Local (merlot, cabernet) 1 lit",,,7,WINES,true,ΕΡΥΘΡΑ
+Ρετσίνα Μοσχάτο Λίμνου 1 lit,Retsina Limnos Muscat 1 lit,,,7,WINES,true,ΛΕΥΚΑ
+Μοσχάτο Ζίτσας 1 lit,Zitsa Muscat 1 lit,,,7,WINES,true,ΛΕΥΚΑ
+Καρύστου Σαββατιανό χύμα 1 lit,Local Savatiano 1lit,,,6,WINES,true,ΛΕΥΚΑ
+"Τυρνάβου (μαύρο μοσχατο) 0,5 lit","Tyrnavos (black muscat) 0,5 lit",,,6,WINES,true,ΗΜΙΓΛΥΚΟΣ
+Φρέντο καπουτσίνο,Freddo cappuccino,,,3.2,COFFEE,true,
+Φρέντο εσπρέσο,Freddo espresso,,,3,COFFEE,true,
+Νες καφέ / φραπέ,Nes cafe / frappe,,,2.8,COFFEE,true,
+Εσπρέσο,Espresso,,,1.8,COFFEE,true,
+Εσπρέσο διπλός,Espresso double,,,2.8,COFFEE,true,
+Ελληνικός διπλός,Greek double,,,2.8,COFFEE,true,
+Ελληνικός,Greek,,,1.8,COFFEE,true,
+Γαρνιτούρα κουρκουμπίνες,Sidedish handmade pasta,,,2,EXTRA,true,
+Γαρνιτούρα σως κηπουρού,Sidedish cream sauce,,,2,EXTRA,true,
+Γαρνιτούρα πέπερ σως,Sidedish pepper sauce,,,2,EXTRA,true,
+Πουρές σελινόριζας με γλυκοπατάτα,Puree of celeriac and sweet patato,,,2,EXTRA,true,
+Γαρνιτούρα μπάμιες,Sidedish ladies finger (okra),,,1.5,EXTRA,true,
+Σάλτσα ναπολιτέν,Sauce napoliten,,,1,EXTRA,true,
+Γαρνιτούρα αρακάς,Sidedish peas,,,1.5,EXTRA,true,
