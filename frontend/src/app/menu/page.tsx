@@ -15,12 +15,22 @@ export default function MenuPage() {
       const { data, error } = await supabase
         .from('menu_items')
         .select('*')
-        .eq('is_available', true);
+        .eq('is_available', true)
+        .order('id',{ascending: true});
       
-      if (!error && data) setDishes(data);
-      setLoading(false);
+      if (!error && data) {
+      // Ταξινομούμε και εδώ βάσει ID για να μην αλλάζει η σειρά ποτέ
+      const finalSorted = data.sort((a, b) => {
+        const indexA = CATEGORY_ORDER.indexOf(a.category);
+        const indexB = CATEGORY_ORDER.indexOf(b.category);
+        if (indexA !== indexB) return indexA - indexB;
+        return a.id < b.id ? -1 : 1;
+      });
+      setDishes(finalSorted);
     }
-    fetchMenu();
+    setLoading(false);
+  }
+  fetchMenu();
   }, []);
 
   if (loading) return <div className={styles.loading}>Φόρτωση / Loading...</div>;
