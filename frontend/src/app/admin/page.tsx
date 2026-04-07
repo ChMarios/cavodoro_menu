@@ -1,9 +1,9 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react'; 
 import { supabase } from '@/lib/supabase';
 import styles from './admin.module.css';
 import { useRouter } from 'next/navigation';
-import { Pencil, Trash2, Plus } from 'lucide-react'; 
+import { Pencil, Trash2, Plus, ChevronLeft, ChevronRight } from 'lucide-react'; 
 import { MENU_STRUCTURE, CATEGORY_ORDER } from '@/lib/constants';
 
 export default function AdminDashboard() {
@@ -15,13 +15,25 @@ export default function AdminDashboard() {
   const [isSaving, setIsSaving] = useState(false);
   const [adminName, setAdminName] = useState('');
   const [editingId, setEditingId] = useState<string | null>(null);
+  
+  const scrollRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
   const [newItem, setNewItem] = useState({
     name_el: '', name_en: '', price: '', category: '', subcategory: '', description_el: '', description_en: ''
   });
 
-  // Filtering: Combines Search text and Category Tab
+  
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 250;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const filteredItems = items.filter(item => {
     const matchesSearch = item.name_el.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           item.name_en.toLowerCase().includes(searchTerm.toLowerCase());
@@ -34,20 +46,14 @@ export default function AdminDashboard() {
       const { data, error } = await supabase
         .from('menu_items')
         .select('*')
-        .order('id', { ascending: true }); // Always fetch in same DB order
+        .order('id', { ascending: true });
 
       if (error) throw error;
       if (data) {
         const sortedData = [...data].sort((a, b) => {
           const indexA = CATEGORY_ORDER.indexOf(a.category);
           const indexB = CATEGORY_ORDER.indexOf(b.category);
-          
-          // 1. Sort by Category Order first
-          if (indexA !== indexB) {
-            return indexA - indexB;
-          }
-          
-          // 2. Keep stable position inside category using ID instead of name
+          if (indexA !== indexB) return indexA - indexB;
           return a.id.localeCompare(b.id);
         });
         setItems(sortedData);
@@ -148,8 +154,6 @@ export default function AdminDashboard() {
       </nav>
 
       <div className={styles.container}>
-        
-        {/* 1. SEARCH & ADD SECTION */}
         <div className={styles.controls}>
           <input 
             type="text" 
@@ -162,26 +166,35 @@ export default function AdminDashboard() {
           </button>
         </div>
 
-        {/* 2. CATEGORY TABS */}
-        <div className={styles.categoryTabs}>
-          <button 
-            className={selectedCategory === 'ALL' ? styles.activeTab : styles.tab} 
-            onClick={() => setSelectedCategory('ALL')}
-          >
-            All
+        {/* --- ΕΝΟΤΗΤΑ TABS ΜΕ ΒΕΛΑΚΙΑ --- */}
+        <div className={styles.tabsWrapper}>
+          <button className={styles.arrowBtn} onClick={() => scroll('left')}>
+            <ChevronLeft size={20} />
           </button>
-          {CATEGORY_ORDER.map(key => (
+
+          <div className={styles.categoryTabs} ref={scrollRef}>
             <button 
-              key={key} 
-              className={selectedCategory === key ? styles.activeTab : styles.tab} 
-              onClick={() => setSelectedCategory(key)}
+              className={selectedCategory === 'ALL' ? styles.activeTab : styles.tab} 
+              onClick={() => setSelectedCategory('ALL')}
             >
-              {MENU_STRUCTURE[key]?.label.split('|')[0]}
+              All
             </button>
-          ))}
+            {CATEGORY_ORDER.map(key => (
+              <button 
+                key={key} 
+                className={selectedCategory === key ? styles.activeTab : styles.tab} 
+                onClick={() => setSelectedCategory(key)}
+              >
+                {MENU_STRUCTURE[key]?.label.split('|')[0]}
+              </button>
+            ))}
+          </div>
+
+          <button className={styles.arrowBtn} onClick={() => scroll('right')}>
+            <ChevronRight size={20} />
+          </button>
         </div>
 
-        {/* 3. TABLE SECTION */}
         <div className={styles.tableWrapper}>
           <table className={styles.table}>
             <thead>
@@ -217,7 +230,6 @@ export default function AdminDashboard() {
           </table>
         </div>
 
-        {/* 4. MODAL */}
         {isModalOpen && (
           <div className={styles.modalOverlay}>
             <div className={styles.modalContent}>

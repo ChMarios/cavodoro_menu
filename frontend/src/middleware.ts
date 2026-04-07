@@ -17,13 +17,10 @@ export async function middleware(request: NextRequest) {
           return request.cookies.getAll()
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value)
-          )
+          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+            
           response = NextResponse.next({
-            request: {
-              headers: request.headers,
-            },
+            request,
           })
           cookiesToSet.forEach(({ name, value, options }) =>
             response.cookies.set(name, value, options)
@@ -33,7 +30,6 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // Χρήση getUser() για μέγιστη ασφάλεια (Server-side verification)
   const { data: { user } } = await supabase.auth.getUser()
   const path = request.nextUrl.pathname;
 
@@ -42,14 +38,12 @@ export async function middleware(request: NextRequest) {
     url.pathname = '/login'
     return NextResponse.redirect(url)
   }
-  // 1. Προστασία Admin: Αν δεν υπάρχει user, ανακατεύθυνση στο Login
   if (!user && path.startsWith('/admin')) {
     const url = request.nextUrl.clone()
     url.pathname = '/login'
     return NextResponse.redirect(url)
   }
 
-  // 2. Αν υπάρχει user, μην τον αφήνεις να δει Login, Signup ή Forgot Password
   const authPages = ['/login', '/forgot-password', '/reset-password'];
   if (user && authPages.includes(path)) {
     const url = request.nextUrl.clone()

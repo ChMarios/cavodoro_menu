@@ -35,8 +35,8 @@ export default function LoginPage() {
       }
 
       if (data?.session) {
+        router.push('/admin');
         router.refresh();
-        window.location.href = '/admin';
       }
     } catch (err) {
       setErrorMsg('Παρουσιάστηκε ένα απρόσμενο σφάλμα.');
