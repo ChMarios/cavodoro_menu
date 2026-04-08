@@ -19,7 +19,7 @@ export const MENU_STRUCTURE: {
   SALADS: { label: "ΣΑΛΑΤΕΣ | SALADS", subcategories: [] },
   SOUPS: { label: "ΣΟΥΠΕΣ | SOUPS", subcategories: [] },
   VEGETERIANS: { label: "ΓΙΑ ΧΟΡΤΟΦΑΓΟΥΣ | FOR VEGETERIANS", subcategories: [] },
-  FRIED: { label: "ΤΗΓΑΝΙΤΑ | FRIED", subcategories: [] },
+  FRIED: { label: "ΤΗΓΑΝΗΤΑ | FRIED", subcategories: [] },
   PASTA: { label: "ΖΥΜΑΡΙΚΑ | PASTA", subcategories: [] },
   MAIN_COURSES: {
     label: "ΚΥΡΙΩΣ ΠΙΑΤΑ | MAIN COURSES",
