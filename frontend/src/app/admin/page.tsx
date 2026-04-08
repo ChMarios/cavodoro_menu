@@ -41,29 +41,38 @@ export default function AdminDashboard() {
     return matchesSearch && matchesCategory;
   });
 
-  const fetchItems = async () => {
-    try {
-      const { data, error } = await supabase
-        .from('menu_items')
-        .select('*')
-        .order('id', { ascending: true });
+const fetchItems = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('menu_items')
+      .select('*');
 
-      if (error) throw error;
-      if (data) {
-        const sortedData = [...data].sort((a, b) => {
-          const indexA = CATEGORY_ORDER.indexOf(a.category);
-          const indexB = CATEGORY_ORDER.indexOf(b.category);
-          if (indexA !== indexB) return indexA - indexB;
-          return a.id.localeCompare(b.id);
-        });
-        setItems(sortedData);
-      }
-    } catch (err) { 
-      console.error("Error fetching items:", err); 
-    } finally { 
-      setLoading(false); 
+    if (error) throw error;
+    if (data) {
+
+      const sortedData = [...data].sort((a, b) => {
+        const indexA = CATEGORY_ORDER.indexOf(a.category);
+        const indexB = CATEGORY_ORDER.indexOf(b.category);
+        if (indexA !== indexB) return indexA - indexB;
+
+        if (a.category && MENU_STRUCTURE[a.category]) {
+          const subs = MENU_STRUCTURE[a.category].subcategories.map(s => s.el);
+          const subIndexA = a.subcategory ? subs.indexOf(a.subcategory) : 999;
+          const subIndexB = b.subcategory ? subs.indexOf(b.subcategory) : 999;
+          if (subIndexA !== subIndexB) return subIndexA - subIndexB;
+        }
+
+        return a.id - b.id;
+      });
+
+      setItems(sortedData);
     }
-  };  
+  } catch (err) { 
+    console.error("Error fetching items:", err); 
+  } finally { 
+    setLoading(false); 
+  }
+};
 
   useEffect(() => {
     const checkAdminAccess = async () => {
