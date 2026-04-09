@@ -1,0 +1,16 @@
+name_el,name_en,description_el,description_en,price,category,subcategory,is_available
+Εννέα (9),Nine (9),"Κτήμα Μουσών - Winery Mousswn (Ασύρτικο, Τρεμπιάνο, Sauvignon Blanc)","Winery Mousswn (Asyrtiko, Trebbiano, Sauvignon Blanc)",16.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Έργο,Ergo,Κτήμα Λαντίδης / Lantidis Winery (Sauvignon Blanc),Lantidis Winery (Sauvignon Blanc),22.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Μαντινεία,Mantinia,Κτήμα Σεμέλη / Semeli Winery (Μοσχοφίλερο),Semeli Winery (Moschofilero),22.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Grenache Blanc,Grenache Blanc,Κτήμα Μοντοφώλι / Montofoli Winery,Montofoli Winery,28.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Ποτήρι (Λευκό),Glass (White),"Αηδάνι, Μονεμβασιά - Aidani, Monemvasia","Aidani, Monemvasia",4.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Prosecco,Prosecco,Prosecco,Prosecco,22.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Ποτήρι (Prosecco),Glass (Prosecco),Prosecco,Prosecco,4.00,BOTTLED_WINE,ΛΕΥΚΑ,true
+Άκρες,Akres,"Σκούρας - Skouras (Αγιωργίτικο, Μοσχοφίλερο)","Skouras (Agiorgitiko, Moschofilero)",18.00,BOTTLED_WINE,ΡΟΖΕ,true
+Ναυτίλος,Nautilus,"La Tour Melas (Γκρενάζ, Σιράζ, Αγιωργίτικο)","La Tour Melas (Grenache, Syrah, Agiorgitiko)",22.00,BOTTLED_WINE,ΡΟΖΕ,true
+Ποτήρι (Ροζέ),Glass (Rose),"Αγιωργίτικο, Μοσχοφίλερο - Agiorgitiko, Moschofilero","Agiorgitiko, Moschofilero",4.00,BOTTLED_WINE,ΡΟΖΕ,true
+Αιώρα,Aiora,"Μοσχόπολις - Moschopolis (Syrah, Μαυροτράγανο, Ξινόμαυρο)","Moschopolis (Syrah, Mavrotragano, Xinomavro)",28.00,BOTTLED_WINE,ΚΟΚΚΙΝΑ,true
+Κράτιστος,Kratistos,Οινοποιείο Λύκος - Lykos Winery (Αγιωργίτικο),Lykos Winery (Agiorgitiko),30.00,BOTTLED_WINE,ΚΟΚΚΙΝΑ,true
+Μμ,Mm,"Σιγάλας - Sigalas (Μαυροτράγανο, Μανδηλαριά)","Sigalas (Mavrotragano, Mandilaria)",34.00,BOTTLED_WINE,ΚΟΚΚΙΝΑ,true
+Ράμνιστα,Ramnista,Κυρ Γιάννης - Kir Yianni (Ξινόμαυρο),Kir Yianni (Xinomavro),38.00,BOTTLED_WINE,ΚΟΚΚΙΝΑ,true
+Ποτήρι (Κόκκινο),Glass (Red),Μανδηλαριά - Mandilaria,Mandilaria,4.00,BOTTLED_WINE,ΚΟΚΚΙΝΑ,true

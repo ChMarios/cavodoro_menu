@@ -1,5 +1,3 @@
-// src/lib/constants.ts
-
 export const MENU_STRUCTURE: { 
   [key: string]: { 
     label: string; 
@@ -54,6 +52,13 @@ export const MENU_STRUCTURE: {
       { el: "ΗΜΙΓΛΥΚΟΣ", en: "SEMI-SWEET WINE" }
     ]
   },
+  BOTTLED_WINE: {label:"ΕΜΦΙΑΛΟΜΕΝΑ ΚΡΑΣΙΑ | BOTTLED WINES", 
+    subcategories: [
+    { el: "ΛΕΥΚΑ", en: "WHITE WINES"},
+    { el: "ΡΟΖΕ", en: "ROZE WINES"},
+    { el: "ΚΟΚΚΙΝΑ", en: "RED WINES"},
+
+  ] },
   COFFEE: { label: "ΚΑΦΕΔΕΣ | COFFEES", subcategories: [] },
   EXTRA: { label: "ΕΞΤΡΑ ΧΡΕΩΣΕΙΣ | EXTRA CHARGES", subcategories: [] }
 };
